@@ -97,3 +97,4 @@ Description: A hero builder tool for an RPG. The player selects a character clas
 
 
 # Hint - You could use if/elif/else on the total power score to show different "battle rating" messages
+#
