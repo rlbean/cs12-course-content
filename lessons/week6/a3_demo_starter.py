@@ -15,7 +15,8 @@ import random
 def spin_wheel():
     # TODO: Generate a random number between 1 and 4
     # TODO: Return "Red" for 1, "Blue" for 2, "Green" for 3, "Yellow" for 4
-    pass
+    pass # will add code later - prevents errors when Python expects a statement
+    #... # we can use 3 periods or an ellipsis as well
 
 
 # --------------------------------------------------
