@@ -1,70 +1,87 @@
 '''
-Name:
-Date:
-Assignment:  Coin Flip Tracker - Teaching Demo
-Description:
+Name:        
+Date:        
+Assignment:  Colour Spinner - Teaching Demo
+Description: 
 '''
 
 import random
 
 
 # --------------------------------------------------
-# flip_coin()
-# Flips one coin. Returns "Heads" or "Tails".
+# spin_wheel()
+# Picks a random section (1-4) and returns a colour.
 # --------------------------------------------------
-def flip_coin():
-    # TODO: Generate a random number between 1 and 2
-    # TODO: If it's 1, return "Heads" — otherwise return "Tails"
+def spin_wheel():
+    # TODO: Generate a random number between 1 and 4
+    # TODO: Return "Red" for 1, "Blue" for 2, "Green" for 3, "Yellow" for 4
     pass
 
 
 # --------------------------------------------------
-# get_num_flips()
-# Asks the user how many flips (1–10).
-# Validates the input and returns a valid integer.
+# get_points(colour)
+# Receives a colour string. Returns the point value.
+#   Red    -> 50 pts
+#   Blue   -> 30 pts
+#   Green  -> 20 pts
+#   Yellow -> 10 pts
 # --------------------------------------------------
-def get_num_flips():
-    while True:
-        user_input = input("How many flips would you like? (1–10): ")
+def get_points(colour):
+    # TODO: Use if/elif/else to return the right point value
+    # Hint: put the rarest/highest outcome first
+    pass
 
-        # TODO: Check that user_input is a digit (use .isdigit())
-        # TODO: Convert it to an integer
-        # TODO: If it is between 1 and 10 (inclusive), return it
-        # TODO: If it fails any check, print a helpful error message
+
+# --------------------------------------------------
+# get_num_spins()
+# Asks the user how many spins they want (1-8).
+# Validates the input. Returns a valid integer.
+# --------------------------------------------------
+def get_num_spins():
+    while True:
+        user_input = input("How many spins would you like? (1-8): ")
+
+        # TODO: Check that user_input is a digit
+        # TODO: Convert to int and check it is between 1 and 8
+        # TODO: If valid, return it
+        # TODO: If invalid, print a helpful error message
 
         pass
 
 
 # --------------------------------------------------
-# play_game(num_flips)
-# Runs the flip loop for the given number of rounds.
-# Counts and returns the total number of Heads.
+# play_game(num_spins)
+# Runs the spin loop for the given number of rounds.
+# Accumulates and returns the total score.
 # --------------------------------------------------
-def play_game(num_flips):
-    heads_count = 0
+def play_game(num_spins):
+    total_score = 0
 
-    # TODO: Use a for loop to repeat num_flips times
-    # TODO: Inside the loop, call flip_coin() and store the result
-    # TODO: Print each flip result with its round number
-    # TODO: If the result is "Heads", add 1 to heads_count
+    # TODO: Use a for loop to repeat num_spins times
+    # TODO: Call spin_wheel() and store the colour
+    # TODO: Call get_points() with that colour and store the points
+    # TODO: Add points to total_score
+    # TODO: Print each round: spin number, colour, and points
 
-    return heads_count      # this sends the total back to main() — don't remove it
+    return total_score      # sends the total back to main() — don't remove this
 
 
 # --------------------------------------------------
 # main()
-# Controls the overall flow. All print() output lives here.
+# Controls the overall flow. All final output lives here.
 # --------------------------------------------------
 def main():
     print("================================")
-    print("      COIN FLIP TRACKER         ")
+    print("        COLOUR SPINNER          ")
     print("================================\n")
 
-    # TODO: Call get_num_flips() and store the result
-    # TODO: Call play_game() with that number, store the heads count
-    # TODO: Calculate tails = total flips - heads
-    # TODO: Print the results (heads count, tails count)
-    # TODO: Print a final message: who won, or if it's a tie
+    # TODO: Call get_num_spins() and store the result
+    # TODO: Call play_game() with that number and store the score
+    # TODO: Print the final score
+    # TODO: Print a final message based on the score:
+    #         150+  -> "Amazing run - you're on fire!"
+    #         80-149 -> "Pretty good spin!"
+    #         below 80 -> "Better luck next time."
 
 
 main()
