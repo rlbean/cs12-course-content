@@ -1,9 +1,15 @@
 '''
-Name
-Date
-Assignment
-Description
+Name Bean - Animal Shelter Demo
+Date: June 2026
+Assignment: Animal Shelter Demo - 
+Description: The Shelter class that manages a collection of animals. 
 '''
+
+from animal_demo import Animal, Dog, Cat, Bird
+
+# ========================================================================
+# SHELTER CLASS - Manages the collection of animals
+# ========================================================================
 
 class Shelter:
     '''Manages a collection of animals at the shelter.'''

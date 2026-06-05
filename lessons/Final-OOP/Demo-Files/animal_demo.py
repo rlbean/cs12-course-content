@@ -102,19 +102,19 @@ class Bird(Animal):
 
 
 #Call Animal class
-animal1 = Animal('Spot', 4,"2025-09-15", 'available')
+# animal1 = Animal('Spot', 4,"2025-09-15", 'available')
 
-#Make one of each
-whiskers = Cat('Mr. Whiskers', 9, '2026-06-02', 'medical hold', 'calico', 4.2, True)
-kiwi = Bird('Kiwi', 2, '2025-10-05', 'available', 'Cockatiel', 32, False)
+# #Make one of each
+# whiskers = Cat('Mr. Whiskers', 9, '2026-06-02', 'medical hold', 'calico', 4.2, True)
+# kiwi = Bird('Kiwi', 2, '2025-10-05', 'available', 'Cockatiel', 32, False)
 
-#Make a Dog
-rex = Dog('Rex', 3, '2025-08-22', 'available', 'Border Collie', 18.5, 'high')
+# #Make a Dog
+# rex = Dog('Rex', 3, '2025-08-22', 'available', 'Border Collie', 18.5, 'high')
 
-animals = [rex, whiskers, kiwi]
+# animals = [rex, whiskers, kiwi]
 
-for a in animals:
-    print(a.get_info())
+# for a in animals:
+#     print(a.get_info())
 
 
 
